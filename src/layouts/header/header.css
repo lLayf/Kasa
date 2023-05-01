@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    color:#FF6060;
+    text-transform: uppercase;
+}
+
+.nav a:hover, .nav .active {
+    border-bottom: 1px solid #FF6060;
+}
+
+@media screen and (min-width: 800px) {
+    .header {
+        padding: 20px 50px;
+    }
+
+    .nav a {
+        font-size: 24px;
+        text-transform: none;
+    }
+
+    .header img {
+        width: 200px;
+        height: 68px;
+    }
+}
