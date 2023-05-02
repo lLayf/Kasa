@@ -1,0 +1,53 @@
+.banner-index-container {
+    position: relative;
+    border-radius: 10px;
+    height: 125px;
+    margin: 20px 0 25px 0;
+}
+
+.banner-index-container h1 {
+    z-index: 10;
+    position: absolute;
+    padding: 15px 60px 0px 20px;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.banner-opacity {
+    z-index: 5;
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.3;
+    height: 125px;
+    border-radius: 10px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+@media screen and (min-width: 800px) {
+    .banner-index-container h1 {
+        top: calc(50% - 50px);
+        left: calc(50% - 190px);
+    }
+
+    .banner-index-container {
+        height: 230px;
+        margin: 25px 50px 35px 50px
+    }
+
+    .banner-opacity {
+        height: 230px;
+    }
+}
+
+@media screen and (min-width: 1141px) {
+    .banner-index-container h1 {
+        font-size: 48px;
+        padding: 0;
+        top: calc(50% - 70px);
+        left: calc(50% - 350px);
+    }
+}
