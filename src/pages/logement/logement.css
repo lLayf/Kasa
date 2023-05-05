@@ -1,0 +1,11 @@
+.top-section {
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 800px) {
+
+    .top-section {
+        margin-top: 0;
+        margin: 0 50px;
+    }
+}
