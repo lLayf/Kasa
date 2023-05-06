@@ -1,0 +1,19 @@
+.banner-about-container {
+    margin: 20px 0;
+}
+
+.collapse-about-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+    .banner-about-container {
+        margin: 20px 50px;
+    }
+
+    .collapse-about-container {
+        margin: 0 50px;
+    }
+}

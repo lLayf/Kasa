@@ -1,0 +1,91 @@
+.collapse {
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.collapse-btn {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 50px;
+    background-color: #FF6060;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.collapse-btn h3 {
+    margin: 0;
+    padding: 5px 15px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.collapse-btn img {
+    outline: none;
+    margin: 0;
+    padding: 0 10px;
+    background-color: #FF6060;
+    border: none;
+    width: 14px;
+}
+
+.collapsable {
+    background-color: #F6F6F6;
+    font-weight: 400;
+    padding: 10px;
+    font-size: 12px;
+    color: #FF6060;
+    overflow: hidden;
+    transition: .4s ease-out;
+}
+
+.collapsable.close {
+    height: 0;
+    opacity: 0;
+}
+
+.collapsable ul {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.collapsable ul li {
+    margin-left: 10px;
+    font-size: 12px;
+    list-style: none;
+}
+
+@media screen and (min-width: 550px) {
+    .collapse {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .collapse-btn {
+        max-width: 1000px;
+    }
+
+    .collapse-btn h3 {
+        margin: 0;
+        padding: 5px 15px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .collapse-btn img {
+        width: 24px;
+        padding: 0 30px;
+    }
+
+    .collapsable ul li {
+        font-size: 18px;
+    }
+
+    .collapsable p {
+        font-size: 18px;
+    }
+}
