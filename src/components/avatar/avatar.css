@@ -1,0 +1,35 @@
+.avatar-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar-name {
+    color: #FF6060;
+    text-align: right;
+}
+
+.avatar-name p {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    width: 75px;
+}
+
+.avatar-container img {
+    background-color: #C4C4C4;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 800px) {
+    .avatar-name p {
+        font-size: 18px;
+    }
+
+    .avatar-container img {
+        width: 64px;
+        height: 64px;
+    }
+}

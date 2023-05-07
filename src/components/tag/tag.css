@@ -1,0 +1,15 @@
+.tag {
+    border-radius: 5px;
+    padding: 2px 30px;
+    background-color: #FF6060;
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .tag {
+        border-radius: 10px;
+        padding: 7px 60px;
+        font-size: 14px;
+    }
+}
