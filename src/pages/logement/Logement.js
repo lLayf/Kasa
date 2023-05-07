@@ -4,12 +4,16 @@ import Tag from '../../components/tag/Tag';
 import Stars from '../../components/stars/Stars';
 import Avatar from '../../components/avatar/Avatar';
 import Collapse from '../../components/collapse/Collapse';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import logements from '../../assets/api/logements.json';
 
 function Logement() {
   const { id } = useParams();
   const logement = logements.find(logement => logement.id === id)
+
+  if (!logement) {
+    return <Navigate to="/error" />;
+  }
 
   return (
     <>
