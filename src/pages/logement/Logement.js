@@ -43,9 +43,11 @@ function Logement() {
       <Collapse
         title="Desctiption"
         content={logement.description}
+        initiallyOpen={true}
       />
       <Collapse title="Equipements" 
         content={logement.equipments}
+        initiallyOpen={true}
       />
     </section>
     </>

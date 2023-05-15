@@ -14,7 +14,7 @@ function Home() {
     </section>
     <section className='card-container'>
       {logements.map(logement =>
-        <Card key={logement.id} title={logement.title} id={logement.id} cover={logement.cover} />
+          <Card key={logement.id} title={logement.title} id={logement.id} cover={logement.cover} />
       )}
     </section>
     </>

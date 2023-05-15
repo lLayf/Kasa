@@ -8,6 +8,7 @@ function About() {
     <>
       <section className='banner-about-container'>
         <Banner img={bannerAbout} />
+        <span className='banner-opacity'></span>
       </section>
       <section className='collapse-about-container'>
         <Collapse
@@ -17,11 +18,11 @@ function About() {
             régulièrement vérifiées  par nos équipes."
         />
         <Collapse
-          disabled={true}
           title="Respect"
           content="La bienveillance fait partie des valeurs fondatrices de Kasa. 
             Tout comportement discriminatoire ou de perturbation du voisinage entraînera 
             une exclusion de notre plateforme."
+          initiallyOpen={true}
         />
         <Collapse
           title="Service"

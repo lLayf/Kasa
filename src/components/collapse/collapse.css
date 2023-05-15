@@ -34,17 +34,19 @@
 
 .collapsable {
     background-color: #F6F6F6;
+    padding: 15px 10px 40px 10px;
     font-weight: 400;
-    padding: 10px;
     font-size: 12px;
     color: #FF6060;
     overflow: hidden;
     transition: .4s ease-out;
+    border-radius: 10px;
 }
 
 .collapsable.close {
     height: 0;
     opacity: 0;
+    padding: 0;
 }
 
 .collapsable ul {
@@ -58,6 +60,11 @@
     list-style: none;
 }
 
+.collapsable p {
+    margin: 0;
+    line-height: 1.5;
+}
+
 @media screen and (min-width: 550px) {
     .collapse {
         max-width: 1000px;
@@ -67,6 +74,7 @@
 @media screen and (min-width: 800px) {
     .collapse-btn {
         max-width: 1000px;
+        height: 47px;
     }
 
     .collapse-btn h3 {

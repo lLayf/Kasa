@@ -4,7 +4,7 @@ import arrowDown from '../../assets/img/arrow-down.svg';
 import arrowUp from '../../assets/img/arrow-up.svg';
 
 function Collapse(props) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(props.initiallyOpen || false);
 
   return (
     <div className="collapse">

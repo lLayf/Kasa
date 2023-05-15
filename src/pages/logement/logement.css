@@ -12,8 +12,13 @@
     color: #FF6060;
 }
 
+.stars {
+    display: flex;
+    gap: 6px;
+}
+
 .mid-section-text h1 {
-    margin: 10px 0;
+    margin: 10px 0 10px 0px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -21,11 +26,13 @@
 .mid-section-text h2 {
     font-size: 14px;
     font-weight: 500;
+    margin: 0;
 }
 
 .tags-container ul {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     padding: 0;
     gap: 10px;
     list-style: none;
@@ -41,6 +48,7 @@
 .collapse-logement-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 @media screen and (min-width: 800px) {
@@ -64,8 +72,14 @@
         align-items: end;
     }
 
+    .stars {
+        display: flex;
+        gap: 15px;
+    }
+
     .mid-section-text h1 {
         font-size: 36px;
+        margin: 25px 0 3px 0px;
     }
     
     .mid-section-text h2 {

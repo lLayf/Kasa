@@ -5,6 +5,7 @@ function Card(props) {
     <a href={'logements/' + props.id} className='card'>
       <img src={props.cover} alt="appartements" />
       <h2>{props.title}</h2>
+      <span className='card-opacity'></span>
     </a>
   );
 }
