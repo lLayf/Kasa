@@ -3,4 +3,6 @@
     flex-direction: column;
     min-height: 100%;
     padding: 25px 25px 50px 25px;
+    max-width: 1440px;
+    margin: auto;
   }

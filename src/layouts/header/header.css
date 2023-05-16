@@ -7,7 +7,6 @@
 .nav {
     display: flex;
     gap: 20px;
-    text-decoration: none;
 }
 
 .nav a {
@@ -19,12 +18,16 @@
 }
 
 .nav a:hover, .nav .active {
-    border-bottom: 1px solid #FF6060;
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 800px) {
     .header {
         padding: 20px 50px;
+    }
+
+    .nav {
+        gap: 40px;
     }
 
     .nav a {
